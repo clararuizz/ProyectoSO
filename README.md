@@ -2,3 +2,4 @@
 "Monopoly" 
 "Version 1 generada por Clara Ruiz" 
 "Version 1 verificada por Marta De Gea" 
+"Version 1 verificada por Joan Lluc Fernandez" 
