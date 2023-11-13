@@ -1,13 +1,13 @@
 Proyecto del grupo JellyFish de Sistemas Operativos (23/24) Q1.
 
-Monopoly.
+Monopoly
 
-Version 2 generada por Marta De Gea.
+Version 3 generada por Marcel Guim.
 
-Version 2 verificada por Marcel Guim.
+Version 3 verificada por Marta De Gea.
 
-Version 2 verificada por Clara Ruiz
+Version 3 verificada por Joan Lluc Fernandez.
 
-Version 2 comunicada por Joan Lluc Fernandez.
+Version 3 comunicada por Clara Ruiz.
 
-URL: https://www.youtube.com/watch?v=wKOUrx6Y5wo
+URL: https://youtu.be/drTSpkUSOgc
