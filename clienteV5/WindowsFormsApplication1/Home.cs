@@ -71,8 +71,8 @@ namespace WindowsFormsApplication1
             string ipVB = "192.168.56.102";
             int sockS = 50053;
             int sockVB = 9021;
-            IPAddress direc = IPAddress.Parse(ipVB);
-            IPEndPoint ipep = new IPEndPoint(direc,sockVB);
+            IPAddress direc = IPAddress.Parse(ipS);
+            IPEndPoint ipep = new IPEndPoint(direc,sockS);
 
             // Se crea el socket 
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -132,7 +132,7 @@ namespace WindowsFormsApplication1
             {
 
                 //Recibimos mensaje del servidor
-                byte[] msg2 = new byte[80];
+                byte[] msg2 = new byte[200];
                 server.Receive(msg2);
                 trozos = (Encoding.ASCII.GetString(msg2).Split('\0')[0]).Split('/');
                 int codigo = Convert.ToInt32(trozos[0]);
