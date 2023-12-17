@@ -13,6 +13,8 @@ namespace WindowsFormsApplication1
 {
     public partial class RecoverPassword : Form
     {
+        #region Inicializaciones
+        // Inicializaciones
         Socket server;
         string ID;
         public RecoverPassword(Socket server)
@@ -20,11 +22,13 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             this.server = server;
         }
+        #endregion
+
+        #region Passwordrecovery
         public void DameAns(string ans)
         {
             MessageBox.Show("Tu password es:" + ans);
         }
-
         private void recoverButton_Click(object sender, EventArgs e)
         {
             string recoverN = IDTextBox.Text.Trim();
@@ -45,5 +49,6 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Numeros!!");
             }
         }
+        #endregion
     }
 }

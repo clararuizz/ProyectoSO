@@ -28,117 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.MoneyButton = new System.Windows.Forms.Button();
-            this.partidasJugadasButton = new System.Windows.Forms.Button();
-            this.masPuntosButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.usuarioLabel = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button3 = new System.Windows.Forms.Button();
+            this.Consulta2Button = new System.Windows.Forms.Button();
+            this.Consulta1Button = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.nombreTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Results = new System.Windows.Forms.Label();
+            this.resultsDataGrid = new System.Windows.Forms.DataGridView();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.resultsDataGrid)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.groupBox1.Controls.Add(this.Close);
-            this.groupBox1.Controls.Add(this.MoneyButton);
-            this.groupBox1.Controls.Add(this.partidasJugadasButton);
-            this.groupBox1.Controls.Add(this.masPuntosButton);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.nombreTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(303, 77);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(544, 374);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Peticion";
-            // 
-            // MoneyButton
-            // 
-            this.MoneyButton.Location = new System.Drawing.Point(36, 240);
-            this.MoneyButton.Name = "MoneyButton";
-            this.MoneyButton.Size = new System.Drawing.Size(112, 35);
-            this.MoneyButton.TabIndex = 14;
-            this.MoneyButton.Text = "Money";
-            this.MoneyButton.UseVisualStyleBackColor = true;
-            this.MoneyButton.Click += new System.EventHandler(this.MoneyButton_Click);
-            // 
-            // partidasJugadasButton
-            // 
-            this.partidasJugadasButton.Location = new System.Drawing.Point(276, 240);
-            this.partidasJugadasButton.Name = "partidasJugadasButton";
-            this.partidasJugadasButton.Size = new System.Drawing.Size(238, 35);
-            this.partidasJugadasButton.TabIndex = 13;
-            this.partidasJugadasButton.Text = "Partidas Jugadas";
-            this.partidasJugadasButton.UseVisualStyleBackColor = true;
-            this.partidasJugadasButton.Click += new System.EventHandler(this.partidasJugadasButton_Click);
-            // 
-            // masPuntosButton
-            // 
-            this.masPuntosButton.Location = new System.Drawing.Point(156, 240);
-            this.masPuntosButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.masPuntosButton.Name = "masPuntosButton";
-            this.masPuntosButton.Size = new System.Drawing.Size(112, 35);
-            this.masPuntosButton.TabIndex = 11;
-            this.masPuntosButton.Text = "Mas Puntos";
-            this.masPuntosButton.UseVisualStyleBackColor = true;
-            this.masPuntosButton.Click += new System.EventHandler(this.masPuntosButton_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(106, 125);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre";
-            // 
-            // nombreTextBox
-            // 
-            this.nombreTextBox.Location = new System.Drawing.Point(248, 135);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(244, 26);
-            this.nombreTextBox.TabIndex = 3;
             // 
             // usuarioLabel
             // 
             this.usuarioLabel.AutoSize = true;
-            this.usuarioLabel.Location = new System.Drawing.Point(298, 34);
-            this.usuarioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.usuarioLabel.Location = new System.Drawing.Point(177, 32);
             this.usuarioLabel.Name = "usuarioLabel";
-            this.usuarioLabel.Size = new System.Drawing.Size(0, 20);
-            this.usuarioLabel.TabIndex = 9;
+            this.usuarioLabel.Size = new System.Drawing.Size(0, 13);
+            this.usuarioLabel.TabIndex = 11;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(110, 154);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(155, 20);
+            this.dateTimePicker2.TabIndex = 20;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(110, 105);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
+            this.dateTimePicker1.TabIndex = 19;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(18, 105);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(86, 69);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "List of games";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Consulta2Button
+            // 
+            this.Consulta2Button.Location = new System.Drawing.Point(18, 75);
+            this.Consulta2Button.Name = "Consulta2Button";
+            this.Consulta2Button.Size = new System.Drawing.Size(134, 23);
+            this.Consulta2Button.TabIndex = 17;
+            this.Consulta2Button.Text = "Results with player:";
+            this.Consulta2Button.UseVisualStyleBackColor = true;
+            this.Consulta2Button.Click += new System.EventHandler(this.Consulta2Button_Click);
+            // 
+            // Consulta1Button
+            // 
+            this.Consulta1Button.Location = new System.Drawing.Point(18, 46);
+            this.Consulta1Button.Name = "Consulta1Button";
+            this.Consulta1Button.Size = new System.Drawing.Size(247, 23);
+            this.Consulta1Button.TabIndex = 16;
+            this.Consulta1Button.Text = "Players who i played with";
+            this.Consulta1Button.UseVisualStyleBackColor = true;
+            this.Consulta1Button.Click += new System.EventHandler(this.Consulta1Button_Click);
             // 
             // Close
             // 
-            this.Close.Location = new System.Drawing.Point(211, 304);
+            this.Close.Location = new System.Drawing.Point(714, 22);
+            this.Close.Margin = new System.Windows.Forms.Padding(2);
             this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(112, 35);
+            this.Close.Size = new System.Drawing.Size(75, 23);
             this.Close.TabIndex = 15;
             this.Close.Text = "Close";
             this.Close.UseVisualStyleBackColor = true;
             this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
+            // nombreTextBox
+            // 
+            this.nombreTextBox.Location = new System.Drawing.Point(158, 77);
+            this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.Size = new System.Drawing.Size(107, 20);
+            this.nombreTextBox.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(171, 133);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "TO";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Results);
+            this.groupBox2.Controls.Add(this.resultsDataGrid);
+            this.groupBox2.Controls.Add(this.Consulta1Button);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.nombreTextBox);
+            this.groupBox2.Controls.Add(this.dateTimePicker2);
+            this.groupBox2.Controls.Add(this.Consulta2Button);
+            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Location = new System.Drawing.Point(105, 32);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(579, 214);
+            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Queries";
+            // 
+            // Results
+            // 
+            this.Results.AutoSize = true;
+            this.Results.Location = new System.Drawing.Point(296, 30);
+            this.Results.Name = "Results";
+            this.Results.Size = new System.Drawing.Size(42, 13);
+            this.Results.TabIndex = 23;
+            this.Results.Text = "Results";
+            // 
+            // resultsDataGrid
+            // 
+            this.resultsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.resultsDataGrid.Location = new System.Drawing.Point(299, 46);
+            this.resultsDataGrid.Name = "resultsDataGrid";
+            this.resultsDataGrid.Size = new System.Drawing.Size(240, 150);
+            this.resultsDataGrid.TabIndex = 22;
+            this.resultsDataGrid.SelectionChanged += new System.EventHandler(this.resultsDataGrid_SelectionChanged);
+            // 
             // Consultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.usuarioLabel);
-            this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Controls.Add(this.Close);
             this.Name = "Consultas";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Consultas_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.resultsDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,13 +180,17 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button MoneyButton;
-        private System.Windows.Forms.Button partidasJugadasButton;
-        private System.Windows.Forms.Button masPuntosButton;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.Label usuarioLabel;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Consulta2Button;
+        private System.Windows.Forms.Button Consulta1Button;
         private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.TextBox nombreTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label Results;
+        private System.Windows.Forms.DataGridView resultsDataGrid;
     }
 }

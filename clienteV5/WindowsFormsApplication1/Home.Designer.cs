@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.logInBox = new System.Windows.Forms.GroupBox();
+            this.showPassword = new System.Windows.Forms.PictureBox();
             this.logOutButton = new System.Windows.Forms.Button();
             this.forgotLink = new System.Windows.Forms.LinkLabel();
             this.enterButton = new System.Windows.Forms.Button();
@@ -47,7 +49,10 @@
             this.checkConnected = new System.Windows.Forms.CheckBox();
             this.consultasButton = new System.Windows.Forms.Button();
             this.userLabel = new System.Windows.Forms.Label();
+            this.EliminaButton = new System.Windows.Forms.Button();
+            this.eliminaTextBox = new System.Windows.Forms.TextBox();
             this.logInBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showPassword)).BeginInit();
             this.registerBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.conectadosGridView)).BeginInit();
             this.userListBox.SuspendLayout();
@@ -55,6 +60,7 @@
             // 
             // logInBox
             // 
+            this.logInBox.Controls.Add(this.showPassword);
             this.logInBox.Controls.Add(this.logOutButton);
             this.logInBox.Controls.Add(this.forgotLink);
             this.logInBox.Controls.Add(this.enterButton);
@@ -68,6 +74,18 @@
             this.logInBox.TabIndex = 0;
             this.logInBox.TabStop = false;
             this.logInBox.Text = "Log In";
+            // 
+            // showPassword
+            // 
+            this.showPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("showPassword.BackgroundImage")));
+            this.showPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.showPassword.Location = new System.Drawing.Point(371, 84);
+            this.showPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showPassword.Name = "showPassword";
+            this.showPassword.Size = new System.Drawing.Size(32, 37);
+            this.showPassword.TabIndex = 12;
+            this.showPassword.TabStop = false;
+            this.showPassword.Click += new System.EventHandler(this.showPassword_Click_1);
             // 
             // logOutButton
             // 
@@ -140,7 +158,7 @@
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(102, 29);
             this.playButton.TabIndex = 10;
-            this.playButton.Text = "Jugar";
+            this.playButton.Text = "Play";
             this.playButton.UseVisualStyleBackColor = true;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
@@ -181,6 +199,7 @@
             this.conectadosGridView.RowHeadersWidth = 62;
             this.conectadosGridView.Size = new System.Drawing.Size(153, 195);
             this.conectadosGridView.TabIndex = 3;
+            this.conectadosGridView.SelectionChanged += new System.EventHandler(this.conectadosGridView_SelectionChanged);
             // 
             // userListBox
             // 
@@ -230,7 +249,7 @@
             this.consultasButton.Name = "consultasButton";
             this.consultasButton.Size = new System.Drawing.Size(102, 33);
             this.consultasButton.TabIndex = 11;
-            this.consultasButton.Text = "Consultas";
+            this.consultasButton.Text = "Consult";
             this.consultasButton.UseVisualStyleBackColor = true;
             this.consultasButton.Click += new System.EventHandler(this.consultasButton_Click);
             // 
@@ -243,11 +262,30 @@
             this.userLabel.TabIndex = 12;
             this.userLabel.Text = "Not Logged";
             // 
+            // EliminaButton
+            // 
+            this.EliminaButton.Location = new System.Drawing.Point(376, 370);
+            this.EliminaButton.Name = "EliminaButton";
+            this.EliminaButton.Size = new System.Drawing.Size(102, 30);
+            this.EliminaButton.TabIndex = 13;
+            this.EliminaButton.Text = "Delete User";
+            this.EliminaButton.UseVisualStyleBackColor = true;
+            this.EliminaButton.Click += new System.EventHandler(this.EliminaButton_Click);
+            // 
+            // eliminaTextBox
+            // 
+            this.eliminaTextBox.Location = new System.Drawing.Point(156, 376);
+            this.eliminaTextBox.Name = "eliminaTextBox";
+            this.eliminaTextBox.Size = new System.Drawing.Size(191, 20);
+            this.eliminaTextBox.TabIndex = 14;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.eliminaTextBox);
+            this.Controls.Add(this.EliminaButton);
             this.Controls.Add(this.userLabel);
             this.Controls.Add(this.consultasButton);
             this.Controls.Add(this.playButton);
@@ -264,6 +302,7 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.logInBox.ResumeLayout(false);
             this.logInBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showPassword)).EndInit();
             this.registerBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.conectadosGridView)).EndInit();
             this.userListBox.ResumeLayout(false);
@@ -293,5 +332,8 @@
         private System.Windows.Forms.Button consultasButton;
         private System.Windows.Forms.Button logOutButton;
         private System.Windows.Forms.Label userLabel;
+        private System.Windows.Forms.PictureBox showPassword;
+        private System.Windows.Forms.Button EliminaButton;
+        private System.Windows.Forms.TextBox eliminaTextBox;
     }
 }

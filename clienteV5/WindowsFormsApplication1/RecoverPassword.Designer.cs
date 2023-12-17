@@ -37,19 +37,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 92);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(165, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(113, 16);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Escribe tu ID aquí";
+            this.label1.Text = "Write your ID here";
             // 
             // recoverButton
             // 
-            this.recoverButton.Location = new System.Drawing.Point(221, 126);
-            this.recoverButton.Margin = new System.Windows.Forms.Padding(2);
+            this.recoverButton.Location = new System.Drawing.Point(295, 155);
+            this.recoverButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.recoverButton.Name = "recoverButton";
-            this.recoverButton.Size = new System.Drawing.Size(212, 36);
+            this.recoverButton.Size = new System.Drawing.Size(283, 44);
             this.recoverButton.TabIndex = 4;
             this.recoverButton.Text = "Recover Password";
             this.recoverButton.UseVisualStyleBackColor = true;
@@ -57,31 +56,33 @@
             // 
             // IDTextBox
             // 
-            this.IDTextBox.Location = new System.Drawing.Point(221, 92);
-            this.IDTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.IDTextBox.Location = new System.Drawing.Point(295, 113);
+            this.IDTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IDTextBox.Name = "IDTextBox";
-            this.IDTextBox.Size = new System.Drawing.Size(212, 20);
+            this.IDTextBox.Size = new System.Drawing.Size(281, 22);
             this.IDTextBox.TabIndex = 3;
             // 
             // recoverLabel
             // 
             this.recoverLabel.AutoSize = true;
-            this.recoverLabel.Location = new System.Drawing.Point(282, 47);
+            this.recoverLabel.Location = new System.Drawing.Point(376, 58);
+            this.recoverLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.recoverLabel.Name = "recoverLabel";
-            this.recoverLabel.Size = new System.Drawing.Size(102, 13);
+            this.recoverLabel.Size = new System.Drawing.Size(129, 16);
             this.recoverLabel.TabIndex = 6;
             this.recoverLabel.Text = "Password Recovery";
             // 
-            // Form3
+            // RecoverPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 278);
+            this.ClientSize = new System.Drawing.Size(816, 342);
             this.Controls.Add(this.recoverLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.recoverButton);
             this.Controls.Add(this.IDTextBox);
-            this.Name = "Form3";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "RecoverPassword";
             this.Text = "Form3";
             this.ResumeLayout(false);
             this.PerformLayout();
